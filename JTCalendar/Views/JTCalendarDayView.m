@@ -120,6 +120,9 @@
         [dateFormatter setDateFormat:@"dd"];
     }
     
+    // Sync timezone with dateHelper's timezone
+    dateFormatter.timeZone = _manager.dateHelper.calendar.timeZone;
+    
     _textLabel.text = [dateFormatter stringFromDate:_date];
         
     [_manager.delegateManager prepareDayView:self];
