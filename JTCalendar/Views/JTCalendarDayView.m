@@ -120,18 +120,12 @@
     if(!dateFormatter){
         dateFormatter = [_manager.dateHelper createDateFormatter];
     }
-<<<<<<< HEAD
     
     // Sync timezone with dateHelper's timezone
     dateFormatter.timeZone = _manager.dateHelper.calendar.timeZone;
-    
-    _textLabel.text = [dateFormatter stringFromDate:_date];
-        
-=======
     [dateFormatter setDateFormat:self.dayFormat];
 
-    _textLabel.text = [ dateFormatter stringFromDate:_date];       
->>>>>>> jonathantribouharet/master
+    _textLabel.text = [ dateFormatter stringFromDate:_date];
     [_manager.delegateManager prepareDayView:self];
 }
 
