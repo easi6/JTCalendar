@@ -20,6 +20,7 @@
 - (void)loadNextPage;
 
 - (void)loadPreviousPageWithAnimation;
+- (void)loadPreviousPageWithAnimation:(BOOL)animate;
 - (void)loadNextPageWithAnimation;
-
+- (void)loadNextPageWithAnimation:(BOOL)animate;
 @end
